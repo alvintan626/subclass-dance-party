@@ -1,13 +1,14 @@
-var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
+var makeAlvinDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
+  this.$node = $('<span class="alvindancer"></span>')
   this.setPosition(top, left);
-  
+
 };
-makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
+makeAlvinDancer.prototype = Object.create(makeDancer.prototype);
 
-makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
+makeAlvinDancer.prototype.constructor = makeAlvinDancer;
 
-makeBlinkyDancer.prototype.step = function() {
+makeAlvinDancer.prototype.step = function() {
   makeDancer.prototype.step.call(this);   // 'this' gains access to the mydancer scope
   this.$node.toggle();
 };

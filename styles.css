@@ -21,7 +21,17 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:40px solid black;
   border-radius:10px;
+  position:absolute;
+}
+.alvindancer{
+  border:40px solid yellow;
+  border-radius:10px;
+  position:absolute;
+}
+.briandancer{
+  border:30px solid blue;
+  border-radius:40px;
   position:absolute;
 }
