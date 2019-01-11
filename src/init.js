@@ -29,5 +29,21 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
   });
+
+  $('body').mouseover(function(){
+    $('.dancer').css({"height": "200px", "width": "200px", "background-color": "#00BFFF"});
+  });
+
+  $('.addStackButton').on('click', function(event) {
+    
+    $('.alvindancer').css({"left":"10px"});
+    $('.briandancer').css({"left":"900px"});
+  
+
+  });
+
+// var offset = $( this ).offset();
+// console.log(offset)
+
 });
 
